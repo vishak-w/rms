@@ -1,0 +1,31 @@
+<form (ngSubmit)="onSubmit()">
+    <label>
+        ProductId:
+     
+      </label>
+
+      <input type="text" class="form-control" id="productId" required [(ngModel)]="product.productId" name="productId"><br/>
+      <label>
+        Category:
+    </label>
+        <input type="text" class="form-control" id="categoryName" required [(ngModel)]="product.categoryName" name="categoryName"><br/>
+     
+
+      <label>
+        TypeofProduct:
+      
+      </label>
+      <input type="text" class="form-control" id="categoryName" required [(ngModel)]="product.typeofproduct" name="categoryName"><br/>
+      <label>
+        ExpiryDate:
+      
+      </label>
+      <input type="text" class="form-control" id="expirydate" [(ngModel)]="product.expirydate" name="expirydate">
+      
+      <label>
+        Price:
+      
+      </label>
+      <input type="text" class="form-control" id="price" required [(ngModel)]="product.price" name="price"><br/>
+      <button type="submit" class="btn btn-success">Submit</button>
+</form>

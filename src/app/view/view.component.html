@@ -1,0 +1,39 @@
+<!-- <div class="block" *ngFor="let product of service.response">
+<li>{{product.productId}}</li>
+<li>{{product.categoryName}}</li>
+<li>{{product.typeofproduct}}</li>
+<li>{{product.expirydate}}</li>
+<li>{{product.price}}</li>
+</div> -->
+<table >
+    <th>ProductId</th><th>CategoryName</th><th>TypeofProduct</th><th>ExpiryDate</th><th>Price</th>
+    <tr *ngFor="let product of service.response">
+        <td>{{product.productId}}</td>
+        <td>{{product.categoryName}}</td>
+        <td>{{product.typeofproduct}}</td>
+        <td>{{product.expirydate}}</td>
+        <td>{{product.price}}</td>
+
+
+    </tr>
+
+
+</table>
+<input type="button" value ="view All Products" (click)=" viewProduct()">
+
+<input type="text" #id name="search">
+<input type="button" value ="search" (click)=" searchProduct(id.value)">
+<table >
+    <th>ProductId</th><th>CategoryName</th><th>TypeofProduct</th><th>ExpiryDate</th><th>Price</th>
+    <tr>
+        <td>{{service.product.productId}}</td>
+        <td>{{service.product.categoryName}}</td>
+        <td>{{service.product.typeofproduct}}</td>
+        <td>{{service.product.expirydate}}</td>
+        <td>{{service.product.price}}</td>
+
+
+    </tr>
+
+
+</table>
